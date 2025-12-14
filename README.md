@@ -106,5 +106,5 @@ cat notes.md | fmtmd
 
 ## See Also
 
-- [Web version](https://rynf1t.github.io/slack-formatter/) - Use the tool in your browser
-- [All Tools](https://rynf1t.com/tools) - Browse all available tools
+- [Web version](https://slack-formatter.itsryan.me/) - Use the tool in your browser
+- [All Tools](https://itsryan.me/tools) - Browse all available tools
