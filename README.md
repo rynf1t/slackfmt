@@ -1,4 +1,4 @@
-# slackfmt
+# fmtmd
 
 Convert Markdown to Slack-compatible HTML format for pasting into Slack, Google Docs, and other apps that recognize HTML clipboard format.
 
@@ -7,14 +7,14 @@ Convert Markdown to Slack-compatible HTML format for pasting into Slack, Google 
 ### From Source
 
 ```bash
-go install github.com/rynf1t/slackfmt@latest
+go install github.com/rynf1t/fmtmd@latest
 ```
 
-This installs `slackfmt` to `~/go/bin/`. To use it as `fmtmd` from anywhere:
+This installs `fmtmd` to `~/go/bin/`. To use it as `fmtmd` from anywhere:
 
 ```bash
 # Create alias (add to ~/.zshrc or ~/.bashrc)
-ln -sf ~/go/bin/slackfmt ~/go/bin/fmtmd
+ln -sf ~/go/bin/fmtmd ~/go/bin/fmtmd
 
 # Make sure ~/go/bin is in your PATH (usually already is)
 export PATH="$HOME/go/bin:$PATH"
@@ -23,18 +23,18 @@ export PATH="$HOME/go/bin:$PATH"
 Or build from source:
 
 ```bash
-git clone https://github.com/rynf1t/slackfmt.git
-cd slackfmt
-go build -o slackfmt
+git clone https://github.com/rynf1t/fmtmd.git
+cd fmtmd
+go build -o fmtmd
 ```
 
 ### Pre-built Binaries
 
-Download pre-built binaries from [GitHub Releases](https://github.com/rynf1t/slackfmt/releases) for macOS, Linux, and Windows.
+Download pre-built binaries from [GitHub Releases](https://github.com/rynf1t/fmtmd/releases) for macOS, Linux, and Windows.
 
 ## Usage
 
-The tool is available as both `slackfmt` and `fmtmd` (if you set up the alias). Use it from anywhere:
+The tool is available as both `fmtmd` and `fmtmd` (if you set up the alias). Use it from anywhere:
 
 ```bash
 # Read from stdin - simplest usage
@@ -43,7 +43,7 @@ echo "# Hello **world**" | fmtmd
 # Read from file
 fmtmd input.md
 # or
-slackfmt input.md
+fmtmd input.md
 
 # Read from clipboard
 fmtmd -c

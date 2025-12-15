@@ -1,4 +1,4 @@
-module github.com/rynf1t/slackfmt
+module github.com/rynf1t/fmtmd
 
 go 1.21
 
