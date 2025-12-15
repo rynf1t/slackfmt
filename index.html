@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slackfmt - CLI Tool</title>
+    <title>fmtmd - CLI Tool</title>
     <style>
         * {
             box-sizing: border-box;
@@ -101,13 +101,26 @@
             border-color: #1a1a1a;
         }
     </style>
+@media (max-width: 768px) {
+    body { padding: 15px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.3rem; }
+    pre { font-size: 0.8rem; padding: 0.75rem; }
+}
+
+@media (max-width: 768px) {
+    body { padding: 15px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.3rem; }
+    pre { font-size: 0.8rem; padding: 0.75rem; }
+}
 </head>
 <body>
     <div class="back-link">
         <a href="https://itsryan.me/tools">← Back to Tools</a>
     </div>
 
-    <h1>slackfmt</h1>
+    <h1>fmtmd</h1>
     <p class="subtitle">
         CLI tool written in Go. Convert Markdown to Slack-compatible HTML format for pasting into Slack, Google Docs, and other apps that recognize HTML clipboard format.
     </p>
@@ -115,33 +128,33 @@
     <h2>Installation</h2>
     
     <h3>From Source</h3>
-    <pre><code>go install github.com/rynf1t/slackfmt@latest</code></pre>
+    <pre><code>go install github.com/rynf1t/fmtmd@latest</code></pre>
 
     <p style="margin-bottom: 1.5rem;">Or build from source:</p>
-    <pre><code>git clone https://github.com/rynf1t/slackfmt.git
-cd slackfmt
-go build -o slackfmt</code></pre>
+    <pre><code>git clone https://github.com/rynf1t/fmtmd.git
+cd fmtmd
+go build -o fmtmd</code></pre>
 
     <h3>Pre-built Binaries</h3>
     <p style="margin-bottom: 1.5rem;">
-        Download pre-built binaries from <a href="https://github.com/rynf1t/slackfmt/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> for macOS, Linux, and Windows.
+        Download pre-built binaries from <a href="https://github.com/rynf1t/fmtmd/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> for macOS, Linux, and Windows.
     </p>
 
     <h2>Usage</h2>
     <pre><code># Read from stdin
-echo "# Hello **world**" | slackfmt
+echo "# Hello **world**" | fmtmd
 
 # Read from file
-slackfmt input.md
+fmtmd input.md
 
 # Read from clipboard
-slackfmt -c
+fmtmd -c
 
 # Write to file instead of clipboard
-slackfmt input.md -o output.html
+fmtmd input.md -o output.html
 
 # Output to stdout (don't copy to clipboard)
-slackfmt input.md -clipboard=false</code></pre>
+fmtmd input.md -clipboard=false</code></pre>
 
     <h2>Features</h2>
     <ul>
@@ -179,10 +192,10 @@ slackfmt input.md -clipboard=false</code></pre>
 
     <h2>Examples</h2>
     <pre><code># Convert a markdown file and paste into Slack
-slackfmt meeting-notes.md
+fmtmd meeting-notes.md
 
 # Convert from clipboard and paste into Google Docs
-slackfmt -c</code></pre>
+fmtmd -c</code></pre>
 
     <h2>Troubleshooting</h2>
     <ul>
@@ -197,7 +210,7 @@ slackfmt -c</code></pre>
     </p>
 
     <p style="margin-top: 2rem;">
-        <a href="https://github.com/rynf1t/slackfmt" target="_blank" rel="noopener noreferrer">View source code on GitHub</a>
+        <a href="https://github.com/rynf1t/fmtmd" target="_blank" rel="noopener noreferrer">View source code on GitHub</a>
     </p>
 </body>
 </html>
